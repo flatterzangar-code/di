@@ -1090,6 +1090,21 @@
                 height: 52px;
             }
         }
+        .music-btn.playing {
+    animation: spin 3s linear infinite, pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(214, 177, 141, 0.7); }
+    70% { box-shadow: 0 0 0 20px rgba(214, 177, 141, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(214, 177, 141, 0); }
+}
+
     </style>
 </head>
 <body>
