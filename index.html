@@ -336,23 +336,24 @@
         }
 
         .music-btn {
-            position: fixed;
-            top: 22px;
-            right: 22px;
-            width: 58px;
-            height: 58px;
-            border-radius: 50%;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            z-index: 200;
-            color: var(--white);
-            font-size: 24px;
-            line-height: 1;
-            background: linear-gradient(135deg, #d6b18d, #b8875d);
-            box-shadow: 0 16px 36px rgba(120, 79, 47, 0.24);
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
-        }
+    position: static; /* ЕНДІ ЖОҒАРЫДА ТҰРМАЙДЫ */
+    margin-top: 20px;
+
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    color: var(--white);
+    font-size: 24px;
+    line-height: 1;
+
+    background: linear-gradient(135deg, #d6b18d, #b8875d);
+    box-shadow: 0 16px 36px rgba(120, 79, 47, 0.24);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
 
         .music-btn:hover {
             transform: scale(1.06);
@@ -1121,7 +1122,6 @@
         <span class="petal" style="left:97%; animation-duration:19s; animation-delay:0.6s;"></span>
     </div>
 
-    <button class="music-btn" id="musicBtn" title="Әуен">♪</button>
 
     <audio id="bgMusic" loop>
         <source src="Қарақат Әбілдина – Қыз ұзату.mp3.mpeg" type="audio/mpeg" />
@@ -1140,6 +1140,9 @@
                 <h1 class="hero-title">ДИЛЬНАЗ</h1>
                 <div class="hero-subtitle">Қыз ұзату</div>
                 <div class="hero-date">7 маусым 2026 • Жексенбі • 18:00</div>
+                <div style="margin-top:20px;">
+    <button class="music-btn" id="musicBtn" title="Әуен">♪</button>
+</div>
         </header>
 
         <main>
